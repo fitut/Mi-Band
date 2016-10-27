@@ -221,7 +221,7 @@ public class BTConnectionManager {
                 final Set<BluetoothDevice> pairedDevices = adapter.getBondedDevices();
 
                 for (BluetoothDevice pairedDevice : pairedDevices) {
-                    if (pairedDevice.getName().toLowerCase().contains("mi band") && pairedDevice.getAddress().startsWith("88:0F:10")) {
+                    if (pairedDevice.getName().toLowerCase().contains("mi band")) {
                         mDeviceAddress = pairedDevice.getAddress();
                         //mFound = true;
                         mAlreadyPaired = true;
@@ -240,7 +240,7 @@ public class BTConnectionManager {
             final Set<BluetoothDevice> pairedDevices = adapter.getBondedDevices();
 
             for (BluetoothDevice pairedDevice : pairedDevices) {
-                if (pairedDevice.getName().toLowerCase().contains("mi band") && pairedDevice.getAddress().startsWith("88:0F:10")) {
+                if (pairedDevice.getName().toLowerCase().contains("mi band")) {
                     mDeviceAddress = pairedDevice.getAddress();
                     //mFound = true;
                     mAlreadyPaired = true;
